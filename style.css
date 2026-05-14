@@ -340,7 +340,7 @@ body.page-home .photo-band--bottom {
 }
 
 .section-label {
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -693,10 +693,10 @@ body.page-home .photo-band--bottom {
 
 /* ── READING SECTION ─────────────────────────────── */
 .reading-now {
-  background: linear-gradient(135deg, var(--lavender-soft), var(--blue-soft));
-  border: 1px solid var(--lavender-light);
-  border-radius: var(--radius);
-  padding: 28px 32px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px 24px;
   margin-bottom: 16px;
 }
 
@@ -705,7 +705,7 @@ body.page-home .photo-band--bottom {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--lavender);
+  color: var(--text-subtle);
   margin-bottom: 8px;
   display: block;
 }
@@ -1155,6 +1155,7 @@ section:last-child { margin-bottom: 0; }
 
 .frosted-panel--reading {
   margin-top: 52px;
+  padding-top: 36px;
 }
 
 .reading-author {
