@@ -345,7 +345,7 @@ body.page-home .photo-band--bottom {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-subtle);
-  margin-bottom: 16px;
+  margin-bottom: 28px;
 }
 
 .audio-buttons {
@@ -1155,7 +1155,13 @@ section:last-child { margin-bottom: 0; }
 
 .frosted-panel--reading {
   margin-top: 52px;
-  padding-top: 36px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.frosted-panel--reading .section-label {
+  padding-left: 24px;
+  margin-bottom: 16px;
 }
 
 .reading-author {
