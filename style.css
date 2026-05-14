@@ -174,7 +174,8 @@ body.page-home {
 }
 
 body.page-home .photo-band--bottom {
-  flex: 1;
+  height: 280px;
+  min-height: 0;
 }
 
 /* ── HOME: PHOTO BANDS ───────────────────────────── */
@@ -187,8 +188,8 @@ body.page-home .photo-band--bottom {
 }
 
 .photo-band--top {
-  height: 52vh;
-  min-height: 320px;
+  height: 36vh;
+  min-height: 220px;
   background-position: center top;
   display: flex;
   align-items: flex-end;
@@ -232,26 +233,30 @@ body.page-home .photo-band--bottom {
 /* ── HOME: MIDDLE SECTION ────────────────────────── */
 .middle-section {
   background: var(--white);
-  padding: 56px 0 60px;
+  padding: 8px 0 0;
 }
 
 .middle-inner {
-  width: 100%;
-  padding: 0 0 0 52px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 80px 0 20px;
 }
 
 /* ── HOME: BIO ───────────────────────────────────── */
 .bio-section {
   display: grid;
   grid-template-columns: 210px 1fr;
-  gap: 28px;
-  align-items: center;
+  gap: 52px;
+  align-items: start;
   margin-bottom: 0;
 }
 
 .bio-photo {
   width: 210px;
   flex-shrink: 0;
+  margin-top: -60px;
+  position: relative;
+  top: 30px;
 }
 
 .bio-photo img {
@@ -267,12 +272,23 @@ body.page-home .photo-band--bottom {
   text-transform: uppercase;
 }
 
+.bio-greeting {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  line-height: 1.75;
+}
+
+
 .bio-text p {
   font-family: 'Lora', serif;
-  font-size: 1.4rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.75;
-  margin-bottom: 28px;
+  margin-bottom: 8px;
 }
 
 .contact-links {
@@ -283,18 +299,22 @@ body.page-home .photo-band--bottom {
 
 .contact-links--centered {
   width: 100%;
-  margin-top: 32px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+  position: relative;
+  top: -10px;
 }
 
 .contact-link {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 5px;
   text-decoration: none;
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  padding: 9px 18px;
+  padding: 6px 13px;
   border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--white);
@@ -309,8 +329,8 @@ body.page-home .photo-band--bottom {
 }
 
 .contact-link svg {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   opacity: 0.75;
 }
 
@@ -1162,6 +1182,8 @@ section:last-child { margin-bottom: 0; }
     border-radius: 12px;
   }
 }
+
+.page-home footer { margin-top: 0; }
 
 /* ── HOME: FOOTER ON PHOTO ───────────────────────── */
 .footer--on-photo {
