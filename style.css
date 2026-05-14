@@ -1170,6 +1170,8 @@ section:last-child { margin-bottom: 0; }
   border-top: none;
   margin-top: 0;
   padding: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* ── HOME: MOBILE ────────────────────────────────── */
