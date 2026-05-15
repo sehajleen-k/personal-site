@@ -1057,6 +1057,14 @@ section:last-child { margin-bottom: 0; }
 
 .explore-cell__link:hover { color: var(--text); }
 
+.explore-cell__link--muted {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  margin-top: auto;
+  opacity: 0.5;
+}
+
 /* Reading cell */
 .explore-cell--reading p.explore-cell__author {
   font-style: italic;
